@@ -1,0 +1,10 @@
+cityexplorer:
+  image: jamiltz/cityexplorer
+  ports:
+    - "4984:4984"
+  links:
+    - couchbaseserver
+  tags:
+    - cityexplorer-staging
+couchbaseserver:
+  image: jamiltz/mycbserver:v1
