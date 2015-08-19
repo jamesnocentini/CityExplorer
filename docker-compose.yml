@@ -1,0 +1,10 @@
+cityexplorer:
+  build: ./
+  ports:
+    - "4984:4984"
+  links:
+    - couchbaseserver
+couchbaseserver:
+  build: ./server
+  ports:
+    - "8091:8091"

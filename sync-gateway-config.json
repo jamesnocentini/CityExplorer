@@ -3,7 +3,7 @@
   "databases": {
     "db": {
       "bucket": "default",
-      "server": "http://localhost:8091",
+      "server": "http://couchbaseserver:8091",
       "users": { "GUEST": { "disabled": false, "admin_channels": ["*"] } },
       "sync": `function(doc, oldDoc) {
 if (doc.type == "profile") {
