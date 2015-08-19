@@ -8,3 +8,5 @@ cityexplorer:
     - cityexplorer-staging
 couchbaseserver:
   image: jamiltz/mycbserver:v1
+  ports:
+      - "8091:8091"
